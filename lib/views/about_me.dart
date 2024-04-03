@@ -66,7 +66,7 @@ class AboutMe extends StatelessWidget {
               style: AppTextStyles.headingStyles(fontSize: 30.0),
               children: [
                 TextSpan(
-                  text: 'Me!',
+                  text: 'Me',
                   style: AppTextStyles.headingStyles(
                       fontSize: 30, color: AppColors.robinEdgeBlue),
                 )
@@ -78,7 +78,7 @@ class AboutMe extends StatelessWidget {
         FadeInLeft(
           duration: const Duration(milliseconds: 1400),
           child: Text(
-            'Flutter Developer!',
+            'Full-Stack Developer!',
             style: AppTextStyles.montserratStyle(color: Colors.white),
           ),
         ),
@@ -86,13 +86,12 @@ class AboutMe extends StatelessWidget {
         FadeInLeft(
           duration: const Duration(milliseconds: 1600),
           child: Text(
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-            ' The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,'
-            ' as opposed to using \'Content here, content here\', making it look like readable English.'
-            ' Many desktop publishing packages and web page editors now use Lorem Ipsum as their default'
-            ' model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.'
-            ' Various versions have evolved over the years, sometimes by accident, sometimes on purpose'
-            ' (injected humour and the like).',
+            'I am a seasoned Full-Stack Developer with over 6 years of extensive experience in Android, iOS, and web development. '
+            'Proficient in a wide range of technologies including HTML5, CSS, JavaScript, ASP.NET, Angular, Flutter, Android, iOS, and Python, '
+            'I possess a comprehensive skill set to tackle diverse development challenges. '
+            'My expertise also includes Power Automate, Xamarin, C#, and Power Apps. With a keen eye for detail and a passion for crafting innovative solutions, I thrive in dynamic environments where I can leverage my knowledge to deliver top-notch web and mobile applications. '
+            'Committed to staying updated with emerging technologies, I continuously strive for excellence in every project I undertake. '
+            ,
             style: AppTextStyles.normalStyle(),
           ),
         ),
