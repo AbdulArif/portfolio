@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
         FadeInRight(
           duration: const Duration(milliseconds: 1400),
           child: Text(
-            'Mukhtar Ali Khan',
+            'Abdul Arif',
             style: AppTextStyles.headingStyles(),
           ),
         ),
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                   TyperAnimatedText('Freelancer',
                       textStyle: AppTextStyles.montserratStyle(
                           color: Colors.lightBlue)),
-                  TyperAnimatedText('YouTuber',
+                  TyperAnimatedText('Full-Stack Developer',
                       textStyle: AppTextStyles.montserratStyle(
                           color: Colors.lightBlue))
                 ],
