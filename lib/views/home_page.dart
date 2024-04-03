@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
               AnimatedTextKit(
                 animatedTexts: [
                   TyperAnimatedText(
-                    'Flutter Developer',
+                    'App Developer',
                     textStyle:
                         AppTextStyles.montserratStyle(color: Colors.lightBlue),
                   ),
