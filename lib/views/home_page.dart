@@ -114,9 +114,9 @@ class _HomePageState extends State<HomePage> {
           duration: const Duration(milliseconds: 1600),
           child: Expanded(
             child: Text(
-              'In publishing and graphic design, Lorem ipsum is a placeholder '
-              'text commonly used to demonstrate the visual form of a document'
-              ' or a typeface without relying on meaningful content.',
+              '6+ Years experienced Full-Stack Developer with expertise in Android, iOS, and web development. '
+              'Specializing in creating robust and user-friendly applications tailored to client needs. '
+              'Dedicated to delivering high-quality solutions and exceeding client expectations.  ',
               style: AppTextStyles.normalStyle(),
             ),
           ),
