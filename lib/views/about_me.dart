@@ -87,9 +87,9 @@ class AboutMe extends StatelessWidget {
           duration: const Duration(milliseconds: 1600),
           child: Text(
             'I am a seasoned Full-Stack Developer with over 6 years of extensive experience in Android, iOS, and web development. '
-            'Proficient in a wide range of technologies including HTML5, CSS, JavaScript, ASP.NET, Angular, Flutter, Android, iOS, and Python, '
+            'Proficient in a wide range of technologies including HTML5, CSS, JavaScript, ASP.NET, Xamarin, C#, Angular, Flutter, Android, iOS, and Python, '
             'I possess a comprehensive skill set to tackle diverse development challenges. '
-            'My expertise also includes Power Automate, Xamarin, C#, and Power Apps. With a keen eye for detail and a passion for crafting innovative solutions, I thrive in dynamic environments where I can leverage my knowledge to deliver top-notch web and mobile applications. '
+            'My expertise also includes Power Automate and Power Apps. With a keen eye for detail and a passion for crafting innovative solutions, I thrive in dynamic environments where I can leverage my knowledge to deliver top-notch web and mobile applications. '
             'Committed to staying updated with emerging technologies, I continuously strive for excellence in every project I undertake. '
             ,
             style: AppTextStyles.normalStyle(),
