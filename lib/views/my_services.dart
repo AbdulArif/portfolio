@@ -52,7 +52,7 @@ class _MyServicesState extends State<MyServices> {
                 isGraphic = value;
               });
             },
-            child: buildAnimatedContainer(
+            child: buildAnimatedWebsite(
               title: 'Website',
               asset: AppAssets.brush,
               hover: isGraphic,
@@ -103,7 +103,7 @@ class _MyServicesState extends State<MyServices> {
                     isGraphic = value;
                   });
                 },
-                child: buildAnimatedContainer(
+                child: buildAnimatedWebsite(
                   title: 'Website',
                   asset: AppAssets.brush,
                   hover: isGraphic,
@@ -158,7 +158,7 @@ class _MyServicesState extends State<MyServices> {
                     isGraphic = value;
                   });
                 },
-                child: buildAnimatedContainer(
+                child: buildAnimatedWebsite(
                   title: 'Website',
                   asset: AppAssets.brush,
                   hover: isGraphic,
@@ -261,4 +261,63 @@ class _MyServicesState extends State<MyServices> {
       ),
     );
   }
+
+
+  AnimatedContainer buildAnimatedWebsite({
+    required String title,
+    required String asset,
+    required bool hover,
+    double width = 350,
+    double hoverWidth = 360,
+  }) {
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 300),
+      width: hover ? hoverWidth : width,
+      height: hover ? 390 : 380,
+      alignment: Alignment.center,
+      transform: hover ? onHoverActive : onHoverRemove,
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 24),
+      decoration: BoxDecoration(
+        color: AppColors.bgColor2,
+        borderRadius: BorderRadius.circular(30),
+        border:
+            hover ? Border.all(color: AppColors.themeColor, width: 3) : null,
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black54,
+            spreadRadius: 4.0,
+            blurRadius: 4.5,
+            offset: Offset(3.0, 4.5),
+          )
+        ],
+      ),
+      child: Column(
+        children: [
+          Image.asset(
+            asset,
+            width: 50,
+            height: 50,
+            color: AppColors.themeColor,
+          ),
+          Constants.sizedBox(height: 30.0),
+          Text(
+            title,
+            style: AppTextStyles.montserratStyle(
+                color: Colors.white, fontSize: 22.0),
+          ),
+          Constants.sizedBox(height: 12.0),
+          Text(
+            'Your online presence is crucial in todays digital landscape, and were here to help you stand out. '
+            'Our website development services focus on creating visually captivating, responsive websites that engage your audience and drive results. ',
+            style: AppTextStyles.normalStyle(fontSize: 14.0),
+            textAlign: TextAlign.center,
+          ),
+          Constants.sizedBox(height: 20.0),
+          AppButtons.buildMaterialButton(buttonName: 'Read More', onTap: () {})
+        ],
+      ),
+    );
+  }
 }
+
+
