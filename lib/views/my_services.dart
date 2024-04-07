@@ -150,7 +150,7 @@ class _MyServicesState extends State<MyServices> {
                   hover: isApp,
                 ),
               ),
-              Constants.sizedBox(width: 24.0),
+              Constants.sizedBox(width: 10.0),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -164,7 +164,21 @@ class _MyServicesState extends State<MyServices> {
                   hover: isGraphic,
                 ),
               ),
-              Constants.sizedBox(width: 24.0),
+              Constants.sizedBox(width: 10.0),
+              InkWell(
+                onTap: () {},
+                onHover: (value) {
+                  setState(() {
+                    isDataAnalyst = value;
+                  });
+                },
+                child: buildAnimatedAI(
+                  title: 'AI Base Solution',
+                  asset: AppAssets.analyst,
+                  hover: isDataAnalyst,
+                ),
+              ),
+              Constants.sizedBox(width: 10.0),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -252,6 +266,63 @@ class _MyServicesState extends State<MyServices> {
           Text(
             'We specialize in crafting custom mobile applications tailored to meet your unique business needs. '
             'our app is not only visually stunning but also user-friendly and functional across various platforms.',
+            style: AppTextStyles.normalStyle(fontSize: 14.0),
+            textAlign: TextAlign.center,
+          ),
+          Constants.sizedBox(height: 20.0),
+          AppButtons.buildMaterialButton(buttonName: 'Read More', onTap: () {})
+        ],
+      ),
+    );
+  }
+
+
+  AnimatedContainer buildAnimatedAI({
+    required String title,
+    required String asset,
+    required bool hover,
+    double width = 350,
+    double hoverWidth = 360,
+  }) {
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 300),
+      width: hover ? hoverWidth : width,
+      height: hover ? 390 : 380,
+      alignment: Alignment.center,
+      transform: hover ? onHoverActive : onHoverRemove,
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 24),
+      decoration: BoxDecoration(
+        color: AppColors.bgColor2,
+        borderRadius: BorderRadius.circular(30),
+        border:
+            hover ? Border.all(color: AppColors.themeColor, width: 3) : null,
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black54,
+            spreadRadius: 4.0,
+            blurRadius: 4.5,
+            offset: Offset(3.0, 4.5),
+          )
+        ],
+      ),
+      child: Column(
+        children: [
+          Image.asset(
+            asset,
+            width: 50,
+            height: 50,
+            color: AppColors.themeColor,
+          ),
+          Constants.sizedBox(height: 30.0),
+          Text(
+            title,
+            style: AppTextStyles.montserratStyle(
+                color: Colors.white, fontSize: 22.0),
+          ),
+          Constants.sizedBox(height: 12.0),
+          Text(
+            'buildAnimatedAI '
+            'buildAnimatedAI ',
             style: AppTextStyles.normalStyle(fontSize: 14.0),
             textAlign: TextAlign.center,
           ),
