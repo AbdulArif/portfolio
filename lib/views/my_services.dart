@@ -54,7 +54,7 @@ class _MyServicesState extends State<MyServices> {
             },
             child: buildAnimatedWebsite(
               title: 'Website',
-              asset: AppAssets.brush,
+              asset: AppAssets.code,
               hover: isGraphic,
             ),
           ),
@@ -105,7 +105,7 @@ class _MyServicesState extends State<MyServices> {
                 },
                 child: buildAnimatedWebsite(
                   title: 'Website',
-                  asset: AppAssets.brush,
+                  asset: AppAssets.code,
                   hover: isGraphic,
                 ),
               ),
@@ -160,7 +160,7 @@ class _MyServicesState extends State<MyServices> {
                 },
                 child: buildAnimatedWebsite(
                   title: 'Website',
-                  asset: AppAssets.brush,
+                  asset: AppAssets.code,
                   hover: isGraphic,
                 ),
               ),
