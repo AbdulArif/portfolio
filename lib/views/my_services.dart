@@ -150,7 +150,7 @@ class _MyServicesState extends State<MyServices> {
                   hover: isApp,
                 ),
               ),
-              Constants.sizedBox(width: 10.0),
+              Constants.sizedBox(width: 24.0),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -164,21 +164,21 @@ class _MyServicesState extends State<MyServices> {
                   hover: isGraphic,
                 ),
               ),
-              Constants.sizedBox(width: 10.0),
-              InkWell(
-                onTap: () {},
-                onHover: (value) {
-                  setState(() {
-                    isDataAnalyst = value;
-                  });
-                },
-                child: buildAnimatedAI(
-                  title: 'AI Base Solution',
-                  asset: AppAssets.analyst,
-                  hover: isDataAnalyst,
-                ),
-              ),
-              Constants.sizedBox(width: 10.0),
+              Constants.sizedBox(width: 24.0),
+              // InkWell(
+              //   onTap: () {},
+              //   onHover: (value) {
+              //     setState(() {
+              //       isDataAnalyst = value;
+              //     });
+              //   },
+              //   child: buildAnimatedAI(
+              //     title: 'AI Base Solution',
+              //     asset: AppAssets.analyst,
+              //     hover: isDataAnalyst,
+              //   ),
+              // ),
+              // Constants.sizedBox(width: 10.0),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
