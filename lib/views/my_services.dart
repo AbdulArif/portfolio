@@ -250,8 +250,8 @@ class _MyServicesState extends State<MyServices> {
           ),
           Constants.sizedBox(height: 12.0),
           Text(
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-            ' The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,',
+            'We specialize in crafting custom mobile applications tailored to meet your unique business needs. '
+            'our app is not only visually stunning but also user-friendly and functional across various platforms.',
             style: AppTextStyles.normalStyle(fontSize: 14.0),
             textAlign: TextAlign.center,
           ),
