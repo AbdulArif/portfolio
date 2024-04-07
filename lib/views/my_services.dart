@@ -53,7 +53,7 @@ class _MyServicesState extends State<MyServices> {
               });
             },
             child: buildAnimatedContainer(
-              title: 'Graphic Designing',
+              title: 'Website',
               asset: AppAssets.brush,
               hover: isGraphic,
             ),
@@ -104,7 +104,7 @@ class _MyServicesState extends State<MyServices> {
                   });
                 },
                 child: buildAnimatedContainer(
-                  title: 'Graphic Designing',
+                  title: 'Website',
                   asset: AppAssets.brush,
                   hover: isGraphic,
                 ),
@@ -159,7 +159,7 @@ class _MyServicesState extends State<MyServices> {
                   });
                 },
                 child: buildAnimatedContainer(
-                  title: 'Graphic Designing',
+                  title: 'Website',
                   asset: AppAssets.brush,
                   hover: isGraphic,
                 ),
