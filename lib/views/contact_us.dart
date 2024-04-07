@@ -179,11 +179,11 @@ class ContactUs extends StatelessWidget {
       child: RichText(
         text: TextSpan(
           text: 'Contact ',
-          style: AppTextStyles.headingStyles(fontSize: 30.0),
+          style: AppTextStyles.normalStyle(fontSize: 30.0),
           children: [
             TextSpan(
-              text: 'Me!',
-              style: AppTextStyles.headingStyles(
+              text: 'Me',
+              style: AppTextStyles.normalStyle(
                   fontSize: 30, color: AppColors.robinEdgeBlue),
             )
           ],
